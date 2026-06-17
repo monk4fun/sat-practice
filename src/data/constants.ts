@@ -46,28 +46,28 @@ export const SECTION_FOR_TOPIC: Record<Topic, SATSection> = {
 export const EXAM_CONFIG = {
   full: {
     sections: [
-      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: 32 * 60 },
-      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: 32 * 60 },
-      { section: 'math' as const, questions: 22, timeLimitSeconds: 35 * 60 },
-      { section: 'math' as const, questions: 22, timeLimitSeconds: 35 * 60 },
+      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: null },
+      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: null },
+      { section: 'math' as const, questions: 22, timeLimitSeconds: null },
+      { section: 'math' as const, questions: 22, timeLimitSeconds: null },
     ],
   },
   'reading-writing-only': {
     sections: [
-      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: 32 * 60 },
-      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: 32 * 60 },
+      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: null },
+      { section: 'reading-writing' as const, questions: 27, timeLimitSeconds: null },
     ],
   },
   'math-only': {
     sections: [
-      { section: 'math' as const, questions: 22, timeLimitSeconds: 35 * 60 },
-      { section: 'math' as const, questions: 22, timeLimitSeconds: 35 * 60 },
+      { section: 'math' as const, questions: 22, timeLimitSeconds: null },
+      { section: 'math' as const, questions: 22, timeLimitSeconds: null },
     ],
   },
   mini: {
     sections: [
-      { section: 'reading-writing' as const, questions: 10, timeLimitSeconds: 12 * 60 },
-      { section: 'math' as const, questions: 10, timeLimitSeconds: 14 * 60 },
+      { section: 'reading-writing' as const, questions: 10, timeLimitSeconds: null },
+      { section: 'math' as const, questions: 10, timeLimitSeconds: null },
     ],
   },
 } as const;

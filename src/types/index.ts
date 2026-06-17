@@ -85,7 +85,7 @@ export type ExamMode = 'full' | 'reading-writing-only' | 'math-only' | 'mini';
 export interface ExamSection {
   section: SATSection;
   questionIds: string[];
-  timeLimitSeconds: number;
+  timeLimitSeconds: number | null;
   startedAt?: string;
   completedAt?: string;
 }

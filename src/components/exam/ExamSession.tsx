@@ -65,13 +65,10 @@ export const ExamSession: React.FC = () => {
     useAppStore.setState((state) => {
       if (state.currentExam) {
         state.currentExam.sections = sections;
-        state.currentExam.remainingSeconds = sections[0].timeLimitSeconds;
+        // Only set remaining seconds if there's a time limit
+        state.currentExam.remainingSeconds = sections[0].timeLimitSeconds ?? 0;
       }
     });
-  };
-
-  const handleTimeUp = () => {
-    submitSection();
   };
 
   if (!exam) {
@@ -102,7 +99,7 @@ export const ExamSession: React.FC = () => {
     return <ExamSummary />;
   }
 
-  const remainingTime = useExamTimer(currentSection.timeLimitSeconds, handleTimeUp);
+  const remainingTime = useExamTimer(currentSection.timeLimitSeconds);
   const isFlagged = exam.flaggedQuestions.includes(currentQuestion.id);
 
   const handleAnswer = (answer: 'A' | 'B' | 'C' | 'D') => {

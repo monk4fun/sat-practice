@@ -2,7 +2,7 @@ import React from 'react';
 
 interface TimerProps {
   remainingSeconds: number;
-  totalSeconds: number;
+  totalSeconds: number | null;
 }
 
 const formatTime = (seconds: number) => {
@@ -12,6 +12,17 @@ const formatTime = (seconds: number) => {
 };
 
 export const Timer: React.FC<TimerProps> = ({ remainingSeconds, totalSeconds }) => {
+  // No timer if no time limit
+  if (totalSeconds === null) {
+    return (
+      <div className="rounded-lg bg-blue-50 p-4">
+        <div className="text-sm text-blue-700">
+          ⏱ No time limit - take your time
+        </div>
+      </div>
+    );
+  }
+
   const isLowTime = remainingSeconds < 300; // < 5 minutes
   const isCriticalTime = remainingSeconds < 60;
 

@@ -1,20 +1,23 @@
 import { useEffect, useRef } from 'react';
 import { useAppStore } from '../store/useAppStore';
 
-export function useExamTimer(initialSeconds: number, onTimeUp?: () => void) {
+export function useExamTimer(initialSeconds: number | null) {
   const updateTimer = useAppStore((s) => s.updateExamTimer);
   const exam = useAppStore((s) => s.currentExam);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
-    if (!exam) return;
+    if (!exam || initialSeconds === null) {
+      // No timing pressure - don't start timer
+      return;
+    }
 
     // Initialize remaining seconds if not already set
     if (exam.remainingSeconds === 0) {
       updateTimer(initialSeconds);
     }
 
-    // Set up interval for countdown
+    // Set up interval for countdown (informational only, doesn't force submission)
     intervalRef.current = setInterval(() => {
       const currentExam = useAppStore.getState().currentExam;
       if (!currentExam) return;
@@ -23,9 +26,7 @@ export function useExamTimer(initialSeconds: number, onTimeUp?: () => void) {
 
       if (newRemaining <= 0) {
         updateTimer(0);
-        if (onTimeUp) {
-          onTimeUp();
-        }
+        // Don't force submission - student can continue at their own pace
         if (intervalRef.current) {
           clearInterval(intervalRef.current);
         }
@@ -39,7 +40,12 @@ export function useExamTimer(initialSeconds: number, onTimeUp?: () => void) {
         clearInterval(intervalRef.current);
       }
     };
-  }, [exam?.id, initialSeconds, updateTimer, onTimeUp]);
+  }, [exam?.id, initialSeconds, updateTimer]);
+
+  // If no time limit, return infinity so timer doesn't display
+  if (initialSeconds === null) {
+    return Infinity;
+  }
 
   return exam?.remainingSeconds ?? 0;
 }
