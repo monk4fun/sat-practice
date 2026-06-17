@@ -43,6 +43,33 @@ export const QuestionImporter: React.FC = () => {
     }
   };
 
+  const handleQuickImportOpenSAT = async () => {
+    setIsImporting(true);
+    setError(null);
+
+    try {
+      const questions = await importFromOpenSAT();
+
+      // Validate and auto-approve all questions
+      const validQuestions = questions.filter(q => {
+        const errors = validateQuestion(q);
+        return errors.length === 0;
+      });
+
+      // Save directly to localStorage (auto-approve)
+      const customQuestions = JSON.parse(localStorage.getItem('customQuestions') || '[]');
+      customQuestions.push(...validQuestions);
+      localStorage.setItem('customQuestions', JSON.stringify(customQuestions));
+
+      alert(`✅ Successfully imported and saved ${validQuestions.length} questions from OpenSAT!`);
+      setError(null);
+    } catch (err) {
+      setError(`Error importing from OpenSAT: ${err instanceof Error ? err.message : 'Unknown error'}`);
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
   const handleImportKhanAcademy = async () => {
     if (!csvInput.trim()) {
       setError('Please paste Khan Academy CSV data');
@@ -129,7 +156,7 @@ export const QuestionImporter: React.FC = () => {
       {selectedSource?.source === 'opensat' && (
         <Card>
           <h3 className="mb-4 text-lg font-semibold">Import from OpenSAT</h3>
-          <p className="mb-4 text-sm text-gray-600">
+          <p className="mb-6 text-sm text-gray-600">
             OpenSAT is an open-source community of SAT questions. This will fetch their latest questions.
           </p>
 
@@ -140,15 +167,35 @@ export const QuestionImporter: React.FC = () => {
             </div>
           )}
 
-          <Button
-            variant="primary"
-            size="lg"
-            fullWidth
-            onClick={handleImportOpenSAT}
-            disabled={isImporting}
-          >
-            {isImporting ? 'Importing from OpenSAT...' : 'Import Questions from OpenSAT'}
-          </Button>
+          <div className="space-y-3">
+            <div>
+              <p className="mb-2 text-xs font-medium text-gray-600">Option 1: Quick Import (Auto-Approve)</p>
+              <Button
+                variant="primary"
+                size="lg"
+                fullWidth
+                onClick={handleQuickImportOpenSAT}
+                disabled={isImporting}
+              >
+                {isImporting ? 'Importing...' : '⚡ Import & Auto-Save All Questions'}
+              </Button>
+              <p className="mt-1 text-xs text-gray-500">Imports all questions directly to your bank</p>
+            </div>
+
+            <div className="border-t border-gray-200 pt-3">
+              <p className="mb-2 text-xs font-medium text-gray-600">Option 2: Review Before Adding</p>
+              <Button
+                variant="secondary"
+                size="lg"
+                fullWidth
+                onClick={handleImportOpenSAT}
+                disabled={isImporting}
+              >
+                {isImporting ? 'Importing from OpenSAT...' : '👀 Import & Review Each Question'}
+              </Button>
+              <p className="mt-1 text-xs text-gray-500">Review and approve questions one by one</p>
+            </div>
+          </div>
         </Card>
       )}
 
