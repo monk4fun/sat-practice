@@ -36,21 +36,80 @@ function computeWeight(
   const progress = topicProgress[question.topic];
 
   // Never attempted: high weight
-  if (!progress || progress.totalAttempts === 0) return 2.0;
+  if (!progress || progress.totalAttempts === 0) {
+    const baseWeight = 2.0;
+    // For new topics: prioritize easy questions first
+    return applyDifficultyModifier(baseWeight, 0, question.difficulty);
+  }
 
   const accuracy = progress.accuracyRate;
+  let baseWeight: number;
 
-  // Weak topic (< 50%): highest weight
-  if (accuracy < 0.5) return 4.0;
+  // Determine base weight by accuracy
+  if (accuracy < 0.5) {
+    baseWeight = 4.0; // Weak topic (< 50%): highest weight
+  } else if (accuracy < 0.65) {
+    baseWeight = 2.5; // Below threshold (50–65%): elevated weight
+  } else if (accuracy < 0.8) {
+    baseWeight = 1.0; // Adequate (65–80%): normal weight
+  } else {
+    baseWeight = 0.5; // Strong (> 80%): lower weight
+  }
 
-  // Below threshold (50–65%): elevated weight
-  if (accuracy < 0.65) return 2.5;
+  // PRIORITY 1: Recency penalty - boost weight if strong topic hasn't been attempted recently
+  if (accuracy >= 0.8) {
+    const daysSinceLastAttempt = getDaysSinceLastAttempt(progress.lastAttemptedAt);
+    if (daysSinceLastAttempt >= 7) {
+      // Increase weight for maintenance: strong topics lose weight over time
+      const recencyBoost = Math.min(2.0, baseWeight + (daysSinceLastAttempt * 0.08));
+      baseWeight = recencyBoost;
+    }
+  }
 
-  // Adequate (65–80%): normal weight
-  if (accuracy < 0.8) return 1.0;
+  // PRIORITY 2: Difficulty modifier - adjust weight based on difficulty and accuracy
+  const finalWeight = applyDifficultyModifier(baseWeight, accuracy, question.difficulty);
 
-  // Strong (> 80%): lower weight
-  return 0.5;
+  return finalWeight;
+}
+
+// Helper: Calculate days since last attempt
+function getDaysSinceLastAttempt(lastAttemptedAt: string): number {
+  if (!lastAttemptedAt) return 999; // Never attempted, treat as very old
+  const lastDate = new Date(lastAttemptedAt).getTime();
+  const now = new Date().getTime();
+  const millisPerDay = 24 * 60 * 60 * 1000;
+  return Math.floor((now - lastDate) / millisPerDay);
+}
+
+// Helper: Apply difficulty-based weight modifier
+function applyDifficultyModifier(
+  baseWeight: number,
+  accuracy: number,
+  difficulty: string
+): number {
+  // Difficulty adjustment based on accuracy:
+  // - Weak students (< 65%): need easy questions to build confidence (1.5x easy, 1.0x medium, 0.3x hard)
+  // - Strong students (>= 65%): need harder questions to maintain challenge (0.5x easy, 1.0x medium, 1.5x hard)
+  const difficultyMultiplier: Record<string, number> = {};
+
+  if (accuracy < 0.65) {
+    // Weak student: prioritize easy, medium is normal, hard is rare
+    difficultyMultiplier['easy'] = 1.5;
+    difficultyMultiplier['medium'] = 1.0;
+    difficultyMultiplier['hard'] = 0.3;
+  } else if (accuracy >= 0.8) {
+    // Strong student: skip easy, keep medium, prioritize hard
+    difficultyMultiplier['easy'] = 0.5;
+    difficultyMultiplier['medium'] = 1.0;
+    difficultyMultiplier['hard'] = 1.5;
+  } else {
+    // Moderate student (65–80%): balanced difficulty
+    difficultyMultiplier['easy'] = 0.8;
+    difficultyMultiplier['medium'] = 1.2;
+    difficultyMultiplier['hard'] = 1.0;
+  }
+
+  return baseWeight * (difficultyMultiplier[difficulty] || 1.0);
 }
 
 function weightedSampleWithoutReplacement<T>(
