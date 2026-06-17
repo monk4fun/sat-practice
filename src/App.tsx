@@ -6,9 +6,11 @@ import { ExamPage } from './pages/ExamPage';
 import { ProgressPage } from './pages/ProgressPage';
 import { AdminPage } from './pages/AdminPage';
 import { useFirebaseSync } from './hooks/useFirebaseSync';
+import { useAutoImportQuestions } from './hooks/useAutoImportQuestions';
 
 function AppContent() {
   useFirebaseSync();
+  useAutoImportQuestions();
 
   return (
     <Routes>
