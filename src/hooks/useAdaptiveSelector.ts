@@ -22,8 +22,11 @@ export function selectAdaptiveQuestions(
   const sampleSize = Math.min(options.count, candidates.length);
   if (sampleSize === 0) return [];
 
-  // Assign weights based on topic accuracy
-  const weights = candidates.map((q) => computeWeight(q, topicProgress));
+  // Assign weights based on topic accuracy (with quality score boost)
+  const weights = candidates.map((q) => {
+    const baseWeight = computeWeight(q, topicProgress);
+    return applyQualityBoost(baseWeight, (q as any).qualityScore);
+  });
 
   // Weighted random sample without replacement
   return weightedSampleWithoutReplacement(candidates, weights, sampleSize);
@@ -110,6 +113,16 @@ function applyDifficultyModifier(
   }
 
   return baseWeight * (difficultyMultiplier[difficulty] || 1.0);
+}
+
+// Helper: Apply quality score boost (optional feature)
+// Questions rated higher on SAT closeness get prioritized
+function applyQualityBoost(weight: number, qualityScore?: number): number {
+  if (!qualityScore) return weight;
+  // Quality scores 1-5: boost by 10% per point above 3
+  // 3.0 = 1.0x, 4.0 = 1.1x, 5.0 = 1.2x
+  const boost = 1.0 + Math.max(0, (qualityScore - 3) * 0.1);
+  return weight * boost;
 }
 
 function weightedSampleWithoutReplacement<T>(

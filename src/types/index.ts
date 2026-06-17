@@ -36,6 +36,8 @@ export interface Question {
   correctAnswer: 'A' | 'B' | 'C' | 'D';
   explanation: string;
   tags?: string[];
+  qualityScore?: number;
+  source?: string;
 }
 
 // ─── Progress Tracking ───────────────────────────────────────────────────────

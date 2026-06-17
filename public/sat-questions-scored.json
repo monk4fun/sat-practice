@@ -1,0 +1,4474 @@
+[
+  {
+    "id": "math-alg-001",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve for x: 2x + 3 = 11",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2x = 8, divide by 2: x = 4",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-002",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Simplify: 3x + 2x",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x"
+      },
+      {
+        "id": "B",
+        "text": "3x"
+      },
+      {
+        "id": "C",
+        "text": "5x"
+      },
+      {
+        "id": "D",
+        "text": "6x"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Combine like terms: 3x + 2x = 5x",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-003",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "If x - 5 = 3, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Add 5 to both sides: x = 3 + 5 = 8",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-004",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "What is 4 \u00d7 3 + 2?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "14"
+      },
+      {
+        "id": "B",
+        "text": "18"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "12 + 2 = 14 (multiply before adding)",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-005",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: 5x = 25",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Divide both sides by 5: x = 5",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-006",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: 2x + 5 = x + 8",
+    "choices": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "2x - x = 8 - 5; x = 3",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-007",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Factor: x\u00b2 + 5x + 6",
+    "choices": [
+      {
+        "id": "A",
+        "text": "(x+1)(x+6)"
+      },
+      {
+        "id": "B",
+        "text": "(x+2)(x+3)"
+      },
+      {
+        "id": "C",
+        "text": "(x-2)(x-3)"
+      },
+      {
+        "id": "D",
+        "text": "(x+2)(x-3)"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(x+2)(x+3) = x\u00b2 + 3x + 2x + 6 = x\u00b2 + 5x + 6",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-008",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "What is the slope of y = 2x - 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "-5"
+      },
+      {
+        "id": "B",
+        "text": "0"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "In y = mx + b, m is the slope. Here m = 2",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-009",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: 3(x - 2) = 9",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "6"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "x - 2 = 3; x = 5",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-010",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "Solve: x\u00b2 - 5x + 6 = 0",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = 2 or 3"
+      },
+      {
+        "id": "B",
+        "text": "x = 1 or 6"
+      },
+      {
+        "id": "C",
+        "text": "x = -2 or -3"
+      },
+      {
+        "id": "D",
+        "text": "x = 0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Factor: (x-2)(x-3) = 0; x = 2 or 3",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-011",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "Solve: |x - 3| = 5",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = 8"
+      },
+      {
+        "id": "B",
+        "text": "x = -2"
+      },
+      {
+        "id": "C",
+        "text": "x = 8 or -2"
+      },
+      {
+        "id": "D",
+        "text": "x = 3"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "x - 3 = 5 or x - 3 = -5; x = 8 or x = -2",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-012",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "If f(x) = 2x\u00b2 - 3, what is f(2)?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "f(2) = 2(4) - 3 = 8 - 3 = 5",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-adv-001",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "easy",
+    "stem": "What is \u221a16?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "4 \u00d7 4 = 16",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-adv-002",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "easy",
+    "stem": "What is 2\u00b3?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "9"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2 \u00d7 2 \u00d7 2 = 8",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-adv-003",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "medium",
+    "stem": "Simplify: x\u2074 \u00d7 x\u00b3",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x\u2077"
+      },
+      {
+        "id": "B",
+        "text": "x\u00b9\u00b2"
+      },
+      {
+        "id": "C",
+        "text": "2x\u2077"
+      },
+      {
+        "id": "D",
+        "text": "x\u00b9"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "x\u2074 \u00d7 x\u00b3 = x^(4+3) = x\u2077",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-adv-004",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "medium",
+    "stem": "Simplify: (x\u00b2)\u00b3",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x\u2075"
+      },
+      {
+        "id": "B",
+        "text": "x\u2076"
+      },
+      {
+        "id": "C",
+        "text": "x\u2078"
+      },
+      {
+        "id": "D",
+        "text": "x\u2079"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(x\u00b2)\u00b3 = x^(2\u00d73) = x\u2076",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-adv-005",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "hard",
+    "stem": "If 2^x = 16, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "2\u2074 = 16, so x = 4",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-prob-001",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "easy",
+    "stem": "What is 50% of 80?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "40"
+      },
+      {
+        "id": "C",
+        "text": "60"
+      },
+      {
+        "id": "D",
+        "text": "80"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "50% = 0.5; 0.5 \u00d7 80 = 40",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-prob-002",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "easy",
+    "stem": "If 10% of x is 5, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "50"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "0.10x = 5; x = 50",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-prob-003",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "medium",
+    "stem": "Average of 10, 20, 30, 40 is?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "20"
+      },
+      {
+        "id": "B",
+        "text": "25"
+      },
+      {
+        "id": "C",
+        "text": "30"
+      },
+      {
+        "id": "D",
+        "text": "35"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(10+20+30+40)/4 = 100/4 = 25",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-prob-004",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "medium",
+    "stem": "A $100 item has a 30% discount. Final price?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "$30"
+      },
+      {
+        "id": "B",
+        "text": "$60"
+      },
+      {
+        "id": "C",
+        "text": "$70"
+      },
+      {
+        "id": "D",
+        "text": "$80"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "30% of $100 = $30; $100 - $30 = $70",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-001",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Area of rectangle: length 5, width 3?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "25"
+      },
+      {
+        "id": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Area = length \u00d7 width = 5 \u00d7 3 = 15",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-002",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Circumference of circle: radius 2?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "4\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "8\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "16\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "C = 2\u03c0r = 2\u03c0(2) = 4\u03c0",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-003",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Right triangle legs 3 and 4. Hypotenuse?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "7"
+      },
+      {
+        "id": "D",
+        "text": "8"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "3\u00b2 + 4\u00b2 = 9 + 16 = 25 = 5\u00b2",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-001",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "Climate change causes rising temperatures. This melts ice and raises sea levels.",
+    "stem": "What is a consequence of rising temperatures?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Melting ice"
+      },
+      {
+        "id": "B",
+        "text": "Lower temperatures"
+      },
+      {
+        "id": "C",
+        "text": "More ice"
+      },
+      {
+        "id": "D",
+        "text": "Stable seas"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The passage states rising temperatures melt ice",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-002",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "medium",
+    "stimulus": "The Renaissance was a period of renewed interest in classical learning and art, marking the transition from medieval to modern times.",
+    "stem": "What does the passage indicate about the Renaissance?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "It rejected all learning"
+      },
+      {
+        "id": "B",
+        "text": "It was purely medieval"
+      },
+      {
+        "id": "C",
+        "text": "It focused on classical revival"
+      },
+      {
+        "id": "D",
+        "text": "It had no artistic value"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage states it was marked by 'renewed interest in classical learning and art'",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-001",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "What is the tone of: 'The decision was absolutely appalling'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Approving"
+      },
+      {
+        "id": "B",
+        "text": "Disapproving"
+      },
+      {
+        "id": "C",
+        "text": "Neutral"
+      },
+      {
+        "id": "D",
+        "text": "Confused"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Appalling' indicates strong disapproval",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-001",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Which revision improves clarity: 'The report that was written by the author was important'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The author's report was important"
+      },
+      {
+        "id": "B",
+        "text": "The report being written was important"
+      },
+      {
+        "id": "C",
+        "text": "The important report was written"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "More concise and clear",
+    "qualityScore": 2.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-001",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Which is correct?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The team are playing good"
+      },
+      {
+        "id": "B",
+        "text": "The team is playing well"
+      },
+      {
+        "id": "C",
+        "text": "The teams is playing good"
+      },
+      {
+        "id": "D",
+        "text": "The team are playing well"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Team is singular (is), and 'well' is the adverb form",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-002",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Fix: 'Between you and I, the answer is wrong'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Between you and me"
+      },
+      {
+        "id": "B",
+        "text": "Between you and I"
+      },
+      {
+        "id": "C",
+        "text": "Among you and me"
+      },
+      {
+        "id": "D",
+        "text": "No error"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "After 'between,' use object pronouns: 'me'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-013",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: 4x - 3 = 2x + 5",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "5"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "4x - 2x = 5 + 3; 2x = 8; x = 4",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-alg-014",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "What is the vertex of y = (x - 2)\u00b2 + 1?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "(2, 1)"
+      },
+      {
+        "id": "B",
+        "text": "(-2, 1)"
+      },
+      {
+        "id": "C",
+        "text": "(2, -1)"
+      },
+      {
+        "id": "D",
+        "text": "(0, 1)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Vertex form y = (x-h)\u00b2 + k has vertex (h, k) = (2, 1)",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-001",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Area of rectangle: length 5, width 4?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "9"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "25"
+      },
+      {
+        "id": "D",
+        "text": "40"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Area = length \u00d7 width = 5 \u00d7 4 = 20",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-002",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Perimeter of rectangle: length 6, width 4?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "24"
+      },
+      {
+        "id": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Perimeter = 2(length + width) = 2(6+4) = 20",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-003",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "What is the area of a triangle with base 10 and height 6?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "16"
+      },
+      {
+        "id": "B",
+        "text": "30"
+      },
+      {
+        "id": "C",
+        "text": "60"
+      },
+      {
+        "id": "D",
+        "text": "120"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Area = (1/2) \u00d7 base \u00d7 height = (1/2) \u00d7 10 \u00d7 6 = 30",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-004",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "What is the circumference of a circle with radius 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "5\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "10\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "25\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "50\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "C = 2\u03c0r = 2\u03c0(5) = 10\u03c0",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-005",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Area of circle with radius 3?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "6\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "9\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "12\u03c0"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A = \u03c0r\u00b2 = \u03c0(3)\u00b2 = 9\u03c0",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-006",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Right triangle: legs 5 and 12. Hypotenuse?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "13"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "17"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "5\u00b2 + 12\u00b2 = 25 + 144 = 169 = 13\u00b2",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-007",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Diagonal of square with side 4?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "4\u221a2"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "8\u221a2"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Diagonal = side \u00d7 \u221a2 = 4\u221a2",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-008",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Volume of rectangular box: length 4, width 3, height 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "12"
+      },
+      {
+        "id": "B",
+        "text": "35"
+      },
+      {
+        "id": "C",
+        "text": "60"
+      },
+      {
+        "id": "D",
+        "text": "120"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Volume = length \u00d7 width \u00d7 height = 4 \u00d7 3 \u00d7 5 = 60",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-009",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Area of trapezoid: bases 4 and 6, height 3?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "15"
+      },
+      {
+        "id": "B",
+        "text": "18"
+      },
+      {
+        "id": "C",
+        "text": "30"
+      },
+      {
+        "id": "D",
+        "text": "36"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "A = (1/2)(b\u2081 + b\u2082)h = (1/2)(4+6)(3) = 15",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-010",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Distance between (0,0) and (3,4)?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "d = \u221a(3\u00b2 + 4\u00b2) = \u221a(9+16) = \u221a25 = 5",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-011",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Angles in triangle sum to?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "90\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "270\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "360\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The sum of angles in any triangle is 180\u00b0",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-012",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "In triangle: one angle 60\u00b0, another 80\u00b0. Third?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "30\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "40\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "50\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "60\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "60\u00b0 + 80\u00b0 + x = 180\u00b0; x = 40\u00b0",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-013",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "If triangle has sides 3, 4, 5, it's?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Acute"
+      },
+      {
+        "id": "B",
+        "text": "Right"
+      },
+      {
+        "id": "C",
+        "text": "Obtuse"
+      },
+      {
+        "id": "D",
+        "text": "Equilateral"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "3\u00b2 + 4\u00b2 = 9 + 16 = 25 = 5\u00b2, so it's a right triangle",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-014",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Surface area of cube with side 2?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "24"
+      },
+      {
+        "id": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "6 faces, each area 2\u00b2 = 4; total = 6 \u00d7 4 = 24",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-015",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Two parallel lines cut by transversal. Alternate interior angles?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Different"
+      },
+      {
+        "id": "B",
+        "text": "Equal"
+      },
+      {
+        "id": "C",
+        "text": "Supplementary"
+      },
+      {
+        "id": "D",
+        "text": "Complementary"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Alternate interior angles formed by parallel lines are equal",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-016",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Circumference of circle with diameter 10?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "5\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "10\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "20\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "100\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "C = \u03c0d = \u03c0(10) = 10\u03c0",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-017",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Area of equilateral triangle with side 4?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "4\u221a3"
+      },
+      {
+        "id": "D",
+        "text": "8\u221a3"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "A = (\u221a3/4)s\u00b2 = (\u221a3/4)(16) = 4\u221a3",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-018",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Angles in quadrilateral sum to?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "270\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "360\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "450\u00b0"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Sum of angles in quadrilateral is 360\u00b0",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-019",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Regular hexagon with side 2. Area?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "6\u221a3"
+      },
+      {
+        "id": "B",
+        "text": "12\u221a3"
+      },
+      {
+        "id": "C",
+        "text": "24"
+      },
+      {
+        "id": "D",
+        "text": "48"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Area = (3\u221a3/2)s\u00b2 = (3\u221a3/2)(4) = 6\u221a3",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-020",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Sphere radius 3. Volume?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "27\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "36\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "81\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "108\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "V = (4/3)\u03c0r\u00b3 = (4/3)\u03c0(27) = 36\u03c0",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-001",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "The sun rises in the east and sets in the west every day.",
+    "stem": "What pattern is described?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Irregular movement"
+      },
+      {
+        "id": "B",
+        "text": "Daily pattern"
+      },
+      {
+        "id": "C",
+        "text": "No pattern"
+      },
+      {
+        "id": "D",
+        "text": "Seasonal change"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Every day is a repeating daily pattern",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-002",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "Plants need water, sunlight, and soil to grow.",
+    "stem": "What are the requirements for plant growth?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Just water"
+      },
+      {
+        "id": "B",
+        "text": "Just sunlight"
+      },
+      {
+        "id": "C",
+        "text": "Water, sunlight, and soil"
+      },
+      {
+        "id": "D",
+        "text": "Water and soil only"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage lists all three requirements",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-003",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "medium",
+    "stimulus": "Climate change is caused by increased greenhouse gases in the atmosphere. These gases trap heat, causing rising temperatures. This affects weather patterns and ecosystems.",
+    "stem": "What is the chain of effects described?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Greenhouse gases \u2192 heat trapping \u2192 temperature rise"
+      },
+      {
+        "id": "B",
+        "text": "Weather changes \u2192 temperature rise"
+      },
+      {
+        "id": "C",
+        "text": "Ecosystems \u2192 greenhouse gases"
+      },
+      {
+        "id": "D",
+        "text": "Temperature rise \u2192 greenhouse gases"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "The passage shows greenhouse gases cause heat trapping which causes temperature rise",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-004",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "medium",
+    "stimulus": "The Renaissance began in Italy in the 14th century. It spread to other European countries over centuries. It marked transition from medieval to modern thinking.",
+    "stem": "What was the geographical origin?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "France"
+      },
+      {
+        "id": "B",
+        "text": "Germany"
+      },
+      {
+        "id": "C",
+        "text": "Italy"
+      },
+      {
+        "id": "D",
+        "text": "Spain"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage states it began in Italy",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-005",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "hard",
+    "stimulus": "The scientific method involves observation, hypothesis formation, experimentation, and analysis. Each step builds on the previous one to test ideas systematically.",
+    "stem": "What is emphasized about the scientific method?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "It's disorganized"
+      },
+      {
+        "id": "B",
+        "text": "Steps are random"
+      },
+      {
+        "id": "C",
+        "text": "Each step builds on previous work systematically"
+      },
+      {
+        "id": "D",
+        "text": "It relies on guessing"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Passage emphasizes systematic building through sequential steps",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-001",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "easy",
+    "stem": "What tone is conveyed: 'The results were disappointing'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Excited"
+      },
+      {
+        "id": "B",
+        "text": "Negative"
+      },
+      {
+        "id": "C",
+        "text": "Uncertain"
+      },
+      {
+        "id": "D",
+        "text": "Happy"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Disappointing' conveys a negative tone",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-002",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "What does an exclamation point primarily add?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Emphasis and emotion"
+      },
+      {
+        "id": "B",
+        "text": "Confusion"
+      },
+      {
+        "id": "C",
+        "text": "Questions"
+      },
+      {
+        "id": "D",
+        "text": "Information"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Exclamation points convey emphasis and strong emotion",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-003",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "How does this affect tone: 'The meeting was, unfortunately, postponed'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "No effect"
+      },
+      {
+        "id": "B",
+        "text": "Adds regret or disappointment"
+      },
+      {
+        "id": "C",
+        "text": "Adds excitement"
+      },
+      {
+        "id": "D",
+        "text": "Adds confusion"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Unfortunately' signals regret about the postponement",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-004",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "hard",
+    "stem": "What structure best shows contrast?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Similarly..."
+      },
+      {
+        "id": "B",
+        "text": "However..."
+      },
+      {
+        "id": "C",
+        "text": "Furthermore..."
+      },
+      {
+        "id": "D",
+        "text": "Therefore..."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'However' signals contrast or contradiction",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-005",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "hard",
+    "stem": "Identify the transition: 'First we observed. _____, we analyzed data.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Similarly"
+      },
+      {
+        "id": "B",
+        "text": "Next"
+      },
+      {
+        "id": "C",
+        "text": "However"
+      },
+      {
+        "id": "D",
+        "text": "Therefore"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Next' shows sequence of steps",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-001",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "easy",
+    "stem": "Which is clearest: (A) 'The book by John was good' or (B) 'John's book was good'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "(A) is clearer"
+      },
+      {
+        "id": "B",
+        "text": "(B) is clearer"
+      },
+      {
+        "id": "C",
+        "text": "Both equally clear"
+      },
+      {
+        "id": "D",
+        "text": "(A) is shorter"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(B) is more concise and equally clear",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-002",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Improve: 'The report that was written by the team was important'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The team's important report was written"
+      },
+      {
+        "id": "B",
+        "text": "The team wrote an important report"
+      },
+      {
+        "id": "C",
+        "text": "The report was written by the team which was important"
+      },
+      {
+        "id": "D",
+        "text": "The important report being written was by the team"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "More concise and clearer sentence structure",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-003",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Which revision improves flow?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The student studied hard. The student took the test. The student passed."
+      },
+      {
+        "id": "B",
+        "text": "The student studied hard, took the test, and passed."
+      },
+      {
+        "id": "C",
+        "text": "The student being hard-studying took the test passed"
+      },
+      {
+        "id": "D",
+        "text": "The student, studying hard, the test, passing it"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using parallel structure with conjunctions improves flow",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-004",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "hard",
+    "stem": "What makes this wordy: 'There are many students who believe that tests are important'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Too many commas"
+      },
+      {
+        "id": "B",
+        "text": "'There are' construction is passive"
+      },
+      {
+        "id": "C",
+        "text": "Wrong tense"
+      },
+      {
+        "id": "D",
+        "text": "Too many adjectives"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Direct version: 'Many students believe tests are important'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-005",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "hard",
+    "stem": "Combine sentences best: 'The sun is bright. It warms the earth.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The sun is bright and it warms the earth"
+      },
+      {
+        "id": "B",
+        "text": "The bright sun warms the earth"
+      },
+      {
+        "id": "C",
+        "text": "The sun is bright, and moreover, warms the earth"
+      },
+      {
+        "id": "D",
+        "text": "The sun being bright warms the earth"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Most concise and clear combination",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-001",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Correct form: 'She _____ to the store yesterday.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "go"
+      },
+      {
+        "id": "B",
+        "text": "goes"
+      },
+      {
+        "id": "C",
+        "text": "went"
+      },
+      {
+        "id": "D",
+        "text": "going"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Past tense 'went' matches 'yesterday'",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-002",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Choose correct pronoun: 'He gave the book to _____ (I/me)'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "I"
+      },
+      {
+        "id": "B",
+        "text": "me"
+      },
+      {
+        "id": "C",
+        "text": "myself"
+      },
+      {
+        "id": "D",
+        "text": "moi"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "After preposition 'to', use object pronoun 'me'",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-003",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Correct: 'The dogs _____ (is/are) playing.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "is"
+      },
+      {
+        "id": "B",
+        "text": "are"
+      },
+      {
+        "id": "C",
+        "text": "were"
+      },
+      {
+        "id": "D",
+        "text": "be"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Plural 'dogs' requires plural verb 'are'",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-004",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Fix: 'Between you and I, the answer is wrong.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Between you and me"
+      },
+      {
+        "id": "B",
+        "text": "Between you and I"
+      },
+      {
+        "id": "C",
+        "text": "Among you and me"
+      },
+      {
+        "id": "D",
+        "text": "No change needed"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "After 'between', use object pronoun 'me'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-005",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Subject-verb agreement: 'The team _____ (is/are) ready.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "is"
+      },
+      {
+        "id": "B",
+        "text": "are"
+      },
+      {
+        "id": "C",
+        "text": "were"
+      },
+      {
+        "id": "D",
+        "text": "be"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Team' is singular, so use singular verb 'is'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-006",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Correct comma usage: 'I like apples oranges and bananas.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "apples, oranges and bananas"
+      },
+      {
+        "id": "B",
+        "text": "apples oranges, and bananas"
+      },
+      {
+        "id": "C",
+        "text": "apples, oranges, and bananas"
+      },
+      {
+        "id": "D",
+        "text": "apples oranges and bananas (correct)"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Use commas in series (Oxford comma recommended)",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-007",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Subjunctive mood: 'If I _____ (was/were) president...'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "was"
+      },
+      {
+        "id": "B",
+        "text": "were"
+      },
+      {
+        "id": "C",
+        "text": "am"
+      },
+      {
+        "id": "D",
+        "text": "be"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subjunctive uses 'were' for hypothetical conditions",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-008",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Parallel structure: 'I like reading, _____, and swimming.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "to write"
+      },
+      {
+        "id": "B",
+        "text": "writing"
+      },
+      {
+        "id": "C",
+        "text": "written"
+      },
+      {
+        "id": "D",
+        "text": "write"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Gerunds must be parallel: reading, writing, swimming",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-009",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Pronoun antecedent agreement: 'Each student brought _____ book.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "their"
+      },
+      {
+        "id": "B",
+        "text": "his/her"
+      },
+      {
+        "id": "C",
+        "text": "his"
+      },
+      {
+        "id": "D",
+        "text": "its"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Modern usage accepts 'their' with singular pronouns",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-010",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Apostrophe use: 'The cat's toy' vs 'The cats toy'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The cat's toy (one cat)"
+      },
+      {
+        "id": "B",
+        "text": "The cats toy (plural)"
+      },
+      {
+        "id": "C",
+        "text": "Both are correct"
+      },
+      {
+        "id": "D",
+        "text": "Neither is correct"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'The cat's toy' shows possession by one cat",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-021",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Right angle measures?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "45\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "90\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "360\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A right angle is 90\u00b0",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-022",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Straight line angle is?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "90\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "270\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "360\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Straight angle is 180\u00b0",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-023",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Complementary angles sum to?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "90\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "270\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "360\u00b0"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Complementary angles sum to 90\u00b0",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-024",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Supplementary angles sum to?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "90\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "180\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "270\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "360\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Supplementary angles sum to 180\u00b0",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "math-geo-025",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Vertical angles are?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Different"
+      },
+      {
+        "id": "B",
+        "text": "Equal"
+      },
+      {
+        "id": "C",
+        "text": "Supplementary"
+      },
+      {
+        "id": "D",
+        "text": "Complementary"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Vertical angles are always equal",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-006",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "Water boils at 100\u00b0C at sea level.",
+    "stem": "What is the boiling point of water?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "0\u00b0C"
+      },
+      {
+        "id": "B",
+        "text": "50\u00b0C"
+      },
+      {
+        "id": "C",
+        "text": "100\u00b0C"
+      },
+      {
+        "id": "D",
+        "text": "150\u00b0C"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "The passage states 100\u00b0C",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-007",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "medium",
+    "stimulus": "Photosynthesis is the process by which plants convert sunlight into chemical energy. This process produces oxygen as a byproduct.",
+    "stem": "What is a result of photosynthesis?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Loss of sunlight"
+      },
+      {
+        "id": "B",
+        "text": "Production of oxygen"
+      },
+      {
+        "id": "C",
+        "text": "Consumption of oxygen"
+      },
+      {
+        "id": "D",
+        "text": "Loss of energy"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage states oxygen is produced",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-008",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "hard",
+    "stimulus": "Economic systems vary globally. Capitalism emphasizes private ownership, while socialism emphasizes state control. Most modern economies are mixed systems combining elements of both.",
+    "stem": "What is the main idea?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Capitalism is better"
+      },
+      {
+        "id": "B",
+        "text": "Economic systems vary and combine different approaches"
+      },
+      {
+        "id": "C",
+        "text": "Socialism is superior"
+      },
+      {
+        "id": "D",
+        "text": "No mixed systems exist"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Passage explains variation and combination of systems",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-006",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "easy",
+    "stem": "Rhetorical question purpose?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Expects an answer"
+      },
+      {
+        "id": "B",
+        "text": "Creates emphasis without expecting answer"
+      },
+      {
+        "id": "C",
+        "text": "Asks for information"
+      },
+      {
+        "id": "D",
+        "text": "Shows confusion"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Rhetorical questions emphasize a point",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-007",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "What structure is this: 'Fast as lightning, the runner crossed the finish line'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Simile"
+      },
+      {
+        "id": "B",
+        "text": "Metaphor"
+      },
+      {
+        "id": "C",
+        "text": "Alliteration"
+      },
+      {
+        "id": "D",
+        "text": "Personification"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Simile uses 'as...as' to compare",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-008",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "Purpose of transition 'In conclusion'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Continues ideas"
+      },
+      {
+        "id": "B",
+        "text": "Contrasts ideas"
+      },
+      {
+        "id": "C",
+        "text": "Signals ending"
+      },
+      {
+        "id": "D",
+        "text": "Adds examples"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "'In conclusion' signals the final thought",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-009",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "hard",
+    "stem": "What does allusion provide?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Direct explanation"
+      },
+      {
+        "id": "B",
+        "text": "Indirect reference to other works"
+      },
+      {
+        "id": "C",
+        "text": "Literal description"
+      },
+      {
+        "id": "D",
+        "text": "Factual information"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Allusion is an indirect reference",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-010",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "hard",
+    "stem": "How does irony work?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Direct statement"
+      },
+      {
+        "id": "B",
+        "text": "Opposite of expected meaning"
+      },
+      {
+        "id": "C",
+        "text": "Literal meaning"
+      },
+      {
+        "id": "D",
+        "text": "Question without answer"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Irony conveys opposite of literal meaning",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-006",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "easy",
+    "stem": "Complete idea (not fragment): 'Running in the park.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Running in the park is healthy."
+      },
+      {
+        "id": "B",
+        "text": "Running in the park."
+      },
+      {
+        "id": "C",
+        "text": "Park runs healthy."
+      },
+      {
+        "id": "D",
+        "text": "In the park, running."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Option A is a complete sentence with subject and verb",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-007",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Avoid run-on: 'I like reading I also like writing.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "I like reading I also like writing."
+      },
+      {
+        "id": "B",
+        "text": "I like reading. I also like writing."
+      },
+      {
+        "id": "C",
+        "text": "I like reading also writing."
+      },
+      {
+        "id": "D",
+        "text": "I like reading and I also like writing"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Period separates independent clauses",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-008",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Misplaced modifier: Fix 'Watching the sunset, the mosquitoes bothered us.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "While watching the sunset, mosquitoes bothered us."
+      },
+      {
+        "id": "B",
+        "text": "While we watched the sunset, mosquitoes bothered us."
+      },
+      {
+        "id": "C",
+        "text": "The mosquitoes watched the sunset and bothered us."
+      },
+      {
+        "id": "D",
+        "text": "Watching us, the sunset had mosquitoes."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Modifier should clearly reference the right subject",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-009",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "hard",
+    "stem": "Reduce wordiness: 'The reason why he left was because of rain.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The reason why he left was because of rain."
+      },
+      {
+        "id": "B",
+        "text": "He left because of rain."
+      },
+      {
+        "id": "C",
+        "text": "The reason being rain, he left."
+      },
+      {
+        "id": "D",
+        "text": "He left which was because of the rain."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Remove redundant 'reason why' and 'because'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-010",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "hard",
+    "stem": "Which shows most active voice?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The ball was kicked by John."
+      },
+      {
+        "id": "B",
+        "text": "John kicked the ball."
+      },
+      {
+        "id": "C",
+        "text": "The ball was being kicked."
+      },
+      {
+        "id": "D",
+        "text": "Being kicked, the ball moved."
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Active voice makes the subject perform the action",
+    "qualityScore": 3.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-011",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Possessive pronoun: 'This book is _____.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "mine"
+      },
+      {
+        "id": "B",
+        "text": "mine's"
+      },
+      {
+        "id": "C",
+        "text": "my"
+      },
+      {
+        "id": "D",
+        "text": "me"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Mine' is the possessive pronoun form",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-012",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Who vs whom: 'To _____ should I give this?'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "who"
+      },
+      {
+        "id": "B",
+        "text": "whom"
+      },
+      {
+        "id": "C",
+        "text": "whose"
+      },
+      {
+        "id": "D",
+        "text": "who's"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Whom' is the object of the preposition 'to'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-013",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Dangling modifier: 'Running late, the car sped up.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Running late, I sped up the car."
+      },
+      {
+        "id": "B",
+        "text": "The car, running late, sped up."
+      },
+      {
+        "id": "C",
+        "text": "The car was running and speeding up late."
+      },
+      {
+        "id": "D",
+        "text": "Running late, the car was speeding."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Modifier 'running late' should modify the subject who is running late",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-014",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Correct sequence: 'Having studied, the student took the test.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Having studied, the student took the test."
+      },
+      {
+        "id": "B",
+        "text": "Have studied, the student took the test."
+      },
+      {
+        "id": "C",
+        "text": "Having study, the student took the test."
+      },
+      {
+        "id": "D",
+        "text": "Had studying, the student took the test."
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Present participle 'having studied' shows completed action",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-015",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Verb tense consistency: 'She walks to school and took the bus home.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "She walks to school and took the bus home."
+      },
+      {
+        "id": "B",
+        "text": "She walked to school and takes the bus home."
+      },
+      {
+        "id": "C",
+        "text": "She walks to school and takes the bus home."
+      },
+      {
+        "id": "D",
+        "text": "She walked to school and took the bus home."
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Use consistent present tense throughout",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "opensat-alg-001",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: x + 7 = 15",
+    "choices": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "22"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subtract 7 from both sides: x = 15 - 7 = 8",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-alg-002",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Simplify: 2(3x + 4)",
+    "choices": [
+      {
+        "id": "A",
+        "text": "6x + 4"
+      },
+      {
+        "id": "B",
+        "text": "6x + 8"
+      },
+      {
+        "id": "C",
+        "text": "3x + 8"
+      },
+      {
+        "id": "D",
+        "text": "5x + 6"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Distribute: 2(3x) + 2(4) = 6x + 8",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-alg-003",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: 2x - 5 = 11",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "16"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "2x = 16, x = 8",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-alg-004",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "If f(x) = x + 3, find f(5)",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "15"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "f(5) = 5 + 3 = 8",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-alg-005",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "Solve: x\u00b2 - 9 = 0",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = 3"
+      },
+      {
+        "id": "B",
+        "text": "x = -3"
+      },
+      {
+        "id": "C",
+        "text": "x = \u00b13"
+      },
+      {
+        "id": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "(x-3)(x+3) = 0, so x = 3 or -3",
+    "qualityScore": 3.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-adv-001",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "easy",
+    "stem": "What is \u221a36?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "6"
+      },
+      {
+        "id": "C",
+        "text": "8"
+      },
+      {
+        "id": "D",
+        "text": "12"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "6 \u00d7 6 = 36",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-adv-002",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "medium",
+    "stem": "Simplify: x\u2075/x\u00b2",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x\u00b3"
+      },
+      {
+        "id": "B",
+        "text": "x\u2077"
+      },
+      {
+        "id": "C",
+        "text": "x\u00b2\u00b7\u2075"
+      },
+      {
+        "id": "D",
+        "text": "x\u00b9\u2070"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "x\u2075/x\u00b2 = x^(5-2) = x\u00b3",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-adv-003",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "hard",
+    "stem": "If 3^x = 27, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "3"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "3\u00b3 = 27, so x = 3",
+    "qualityScore": 3.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-prob-001",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "easy",
+    "stem": "If 25% of x is 10, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "25"
+      },
+      {
+        "id": "B",
+        "text": "35"
+      },
+      {
+        "id": "C",
+        "text": "40"
+      },
+      {
+        "id": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "0.25x = 10, x = 40",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-prob-002",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "medium",
+    "stem": "Average of 5, 10, 15, 20 is?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "12.5"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(5+10+15+20)/4 = 50/4 = 12.5",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-geo-001",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Area of square with side 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "25"
+      },
+      {
+        "id": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Area = side\u00b2 = 5\u00b2 = 25",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-geo-002",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Perimeter of triangle with sides 3, 4, 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "7"
+      },
+      {
+        "id": "B",
+        "text": "12"
+      },
+      {
+        "id": "C",
+        "text": "15"
+      },
+      {
+        "id": "D",
+        "text": "20"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Perimeter = 3 + 4 + 5 = 12",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "agieval-alg-001",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: 3x = 21",
+    "choices": [
+      {
+        "id": "A",
+        "text": "6"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "24"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Divide by 3: x = 7",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-alg-002",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: 2(x + 3) = 14",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "5"
+      },
+      {
+        "id": "D",
+        "text": "7"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "x + 3 = 7, x = 4",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-adv-001",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "medium",
+    "stem": "What is \u221a64?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "4"
+      },
+      {
+        "id": "B",
+        "text": "8"
+      },
+      {
+        "id": "C",
+        "text": "16"
+      },
+      {
+        "id": "D",
+        "text": "32"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "8 \u00d7 8 = 64",
+    "qualityScore": 3.5,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-prob-001",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "easy",
+    "stem": "30% of 100 is?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "20"
+      },
+      {
+        "id": "C",
+        "text": "30"
+      },
+      {
+        "id": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "0.30 \u00d7 100 = 30",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-geo-001",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Circumference of circle: radius 4?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "4\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "8\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "16\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "32\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "C = 2\u03c0r = 2\u03c0(4) = 8\u03c0",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "kaggle-alg-001",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Solve: x\u00b2 + 4x + 3 = 0",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = -1 or -3"
+      },
+      {
+        "id": "B",
+        "text": "x = 1 or 3"
+      },
+      {
+        "id": "C",
+        "text": "x = 0 or -4"
+      },
+      {
+        "id": "D",
+        "text": "x = -1 or 3"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "(x+1)(x+3) = 0, so x = -1 or -3",
+    "qualityScore": 4.0,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-alg-002",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "What is the slope of line through (1,2) and (3,6)?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Slope = (6-2)/(3-1) = 4/2 = 2",
+    "qualityScore": 3.5,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-prob-001",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "medium",
+    "stem": "A book costs $20 with 15% discount. Final price?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "$5"
+      },
+      {
+        "id": "B",
+        "text": "$15"
+      },
+      {
+        "id": "C",
+        "text": "$17"
+      },
+      {
+        "id": "D",
+        "text": "$35"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "15% of $20 = $3, so $20 - $3 = $17",
+    "qualityScore": 3.5,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-geo-001",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "Triangle with sides 5, 12, 13 has right angle?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Yes"
+      },
+      {
+        "id": "B",
+        "text": "No"
+      },
+      {
+        "id": "C",
+        "text": "Maybe"
+      },
+      {
+        "id": "D",
+        "text": "Impossible"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "5\u00b2 + 12\u00b2 = 25 + 144 = 169 = 13\u00b2",
+    "qualityScore": 3.5,
+    "source": "kaggle"
+  },
+  {
+    "id": "read-info-001",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "The Internet connects millions of computers worldwide. It allows instant communication and information sharing.",
+    "stem": "What does the Internet enable?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Local communication only"
+      },
+      {
+        "id": "B",
+        "text": "Instant worldwide communication"
+      },
+      {
+        "id": "C",
+        "text": "Telephone calls only"
+      },
+      {
+        "id": "D",
+        "text": "No information sharing"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage states it allows instant communication and information sharing",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-info-002",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "medium",
+    "stimulus": "Vaccines work by introducing a weakened form of a disease. The body develops immunity without experiencing the full disease.",
+    "stem": "How do vaccines work?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "They prevent all diseases"
+      },
+      {
+        "id": "B",
+        "text": "They introduce disease to build immunity"
+      },
+      {
+        "id": "C",
+        "text": "They have no effect"
+      },
+      {
+        "id": "D",
+        "text": "They only treat existing diseases"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage explains the mechanism of immunity development",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-001",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "easy",
+    "stem": "What is the effect of: 'The storm was absolutely devastating'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Minimal impact"
+      },
+      {
+        "id": "B",
+        "text": "Strong emotional impact"
+      },
+      {
+        "id": "C",
+        "text": "Confusion"
+      },
+      {
+        "id": "D",
+        "text": "No effect"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Absolutely devastating' conveys strong negative emotion",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-002",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "Purpose of ellipsis (...) in: 'I couldn't believe... it was actually happening.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Indicates pausing or hesitation"
+      },
+      {
+        "id": "B",
+        "text": "Shows missing information"
+      },
+      {
+        "id": "C",
+        "text": "Emphasizes a point"
+      },
+      {
+        "id": "D",
+        "text": "Ends a sentence"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Ellipsis shows pause or trailing off in thought",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-001",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "easy",
+    "stem": "Which is a complete sentence?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Running quickly"
+      },
+      {
+        "id": "B",
+        "text": "The dog ran quickly"
+      },
+      {
+        "id": "C",
+        "text": "Because he ran"
+      },
+      {
+        "id": "D",
+        "text": "Ran so fast"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "(B) has a complete subject and verb",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-002",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Combine for clarity: 'I like pizza. I like burgers. I like tacos.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "I like pizza I like burgers I like tacos"
+      },
+      {
+        "id": "B",
+        "text": "I like pizza, burgers, and tacos"
+      },
+      {
+        "id": "C",
+        "text": "I like pizza and I like burgers and tacos"
+      },
+      {
+        "id": "D",
+        "text": "Pizza burgers tacos I like"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Using commas and 'and' creates a cleaner list",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-001",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Correct form: 'She _____ to the store.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "go"
+      },
+      {
+        "id": "B",
+        "text": "goes"
+      },
+      {
+        "id": "C",
+        "text": "went"
+      },
+      {
+        "id": "D",
+        "text": "going"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Past tense verb for completed action",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-002",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "medium",
+    "stem": "Choose: 'Neither the teacher nor the students _____ ready.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "is"
+      },
+      {
+        "id": "B",
+        "text": "are"
+      },
+      {
+        "id": "C",
+        "text": "were"
+      },
+      {
+        "id": "D",
+        "text": "be"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Neither...nor' with singular subject uses singular verb",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "opensat-alg-006",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: 5x - 2 = 8",
+    "choices": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "6"
+      },
+      {
+        "id": "D",
+        "text": "10"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "5x = 10, x = 2",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-alg-007",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "medium",
+    "stem": "Factor: x\u00b2 - 16",
+    "choices": [
+      {
+        "id": "A",
+        "text": "(x-4)(x+4)"
+      },
+      {
+        "id": "B",
+        "text": "(x-8)(x+2)"
+      },
+      {
+        "id": "C",
+        "text": "(x-2)(x+8)"
+      },
+      {
+        "id": "D",
+        "text": "(x-16)(x+1)"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "Difference of squares: x\u00b2 - 16 = (x-4)(x+4)",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-adv-004",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "easy",
+    "stem": "What is 2\u2074?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "8"
+      },
+      {
+        "id": "B",
+        "text": "16"
+      },
+      {
+        "id": "C",
+        "text": "32"
+      },
+      {
+        "id": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2 \u00d7 2 \u00d7 2 \u00d7 2 = 16",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-prob-003",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "hard",
+    "stem": "A store marks up items 40%. If cost is $50, selling price?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "$20"
+      },
+      {
+        "id": "B",
+        "text": "$70"
+      },
+      {
+        "id": "C",
+        "text": "$90"
+      },
+      {
+        "id": "D",
+        "text": "$200"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "40% of $50 = $20, so $50 + $20 = $70",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-geo-003",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "hard",
+    "stem": "In isosceles triangle, two angles are 50\u00b0. Third angle?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "50\u00b0"
+      },
+      {
+        "id": "B",
+        "text": "80\u00b0"
+      },
+      {
+        "id": "C",
+        "text": "100\u00b0"
+      },
+      {
+        "id": "D",
+        "text": "130\u00b0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "50\u00b0 + 50\u00b0 + x = 180\u00b0, x = 80\u00b0",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "read-info-003",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "hard",
+    "stimulus": "The ecosystem includes living organisms and their physical environment. Changes in one part affect the entire system. Biodiversity strengthens ecosystem resilience.",
+    "stem": "What is the relationship between biodiversity and ecosystem stability?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "No relationship"
+      },
+      {
+        "id": "B",
+        "text": "Biodiversity weakens systems"
+      },
+      {
+        "id": "C",
+        "text": "Biodiversity strengthens resilience"
+      },
+      {
+        "id": "D",
+        "text": "Systems with diversity are fragile"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Passage states biodiversity strengthens resilience",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-003",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "hard",
+    "stem": "What is the main purpose of this structure: 'Not only was she intelligent, but she was also creative'?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Contrast"
+      },
+      {
+        "id": "B",
+        "text": "Emphasis through parallel structure"
+      },
+      {
+        "id": "C",
+        "text": "Contradiction"
+      },
+      {
+        "id": "D",
+        "text": "Confusion"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "'Not only...but also' emphasizes multiple positive qualities",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-003",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "hard",
+    "stem": "Most active and concise version: 'The decision that was made by the committee was important.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The committee's important decision was made"
+      },
+      {
+        "id": "B",
+        "text": "The committee made an important decision"
+      },
+      {
+        "id": "C",
+        "text": "The important decision was made by the committee"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Active voice with subject performing action",
+    "qualityScore": 2.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-003",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "hard",
+    "stem": "Correct: 'If I _____ the answer, I would tell you.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "know"
+      },
+      {
+        "id": "B",
+        "text": "knew"
+      },
+      {
+        "id": "C",
+        "text": "would know"
+      },
+      {
+        "id": "D",
+        "text": "had known"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "Subjunctive mood: 'knew' (not 'know')",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "agieval-alg-003",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: x/2 = 5",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "25"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Multiply by 2: x = 10",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-adv-002",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "hard",
+    "stem": "Solve: (x-1)\u00b2 = 9",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = 4"
+      },
+      {
+        "id": "B",
+        "text": "x = -2"
+      },
+      {
+        "id": "C",
+        "text": "x = 4 or -2"
+      },
+      {
+        "id": "D",
+        "text": "x = 1 or 9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "x - 1 = \u00b13, so x = 4 or -2",
+    "qualityScore": 3.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-prob-002",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "hard",
+    "stem": "If ratio is 2:3 and first part is 10, second part?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "5"
+      },
+      {
+        "id": "B",
+        "text": "15"
+      },
+      {
+        "id": "C",
+        "text": "20"
+      },
+      {
+        "id": "D",
+        "text": "30"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "2:3 = 10:x, so x = 15",
+    "qualityScore": 4.0,
+    "source": "agieval"
+  },
+  {
+    "id": "agieval-geo-002",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Area of triangle: base 8, height 6?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "14"
+      },
+      {
+        "id": "B",
+        "text": "24"
+      },
+      {
+        "id": "C",
+        "text": "48"
+      },
+      {
+        "id": "D",
+        "text": "64"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "A = (1/2) \u00d7 8 \u00d7 6 = 24",
+    "qualityScore": 3.5,
+    "source": "agieval"
+  },
+  {
+    "id": "kaggle-alg-003",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "easy",
+    "stem": "Solve: 10 - x = 3",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "7"
+      },
+      {
+        "id": "C",
+        "text": "10"
+      },
+      {
+        "id": "D",
+        "text": "13"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "x = 10 - 3 = 7",
+    "qualityScore": 4.0,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-adv-001",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "medium",
+    "stem": "Simplify: \u221a50",
+    "choices": [
+      {
+        "id": "A",
+        "text": "5\u221a2"
+      },
+      {
+        "id": "B",
+        "text": "10\u221a5"
+      },
+      {
+        "id": "C",
+        "text": "25"
+      },
+      {
+        "id": "D",
+        "text": "50"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "\u221a50 = \u221a(25 \u00d7 2) = 5\u221a2",
+    "qualityScore": 3.5,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-prob-002",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "hard",
+    "stem": "If profit is 25% on $80 cost, selling price?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "$55"
+      },
+      {
+        "id": "B",
+        "text": "$80"
+      },
+      {
+        "id": "C",
+        "text": "$100"
+      },
+      {
+        "id": "D",
+        "text": "$105"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "25% profit = 25% of $80 = $20, so $80 + $20 = $100",
+    "qualityScore": 4.0,
+    "source": "kaggle"
+  },
+  {
+    "id": "kaggle-geo-002",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "medium",
+    "stem": "Volume of cylinder: radius 2, height 5?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "10\u03c0"
+      },
+      {
+        "id": "B",
+        "text": "20\u03c0"
+      },
+      {
+        "id": "C",
+        "text": "25\u03c0"
+      },
+      {
+        "id": "D",
+        "text": "50\u03c0"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "V = \u03c0r\u00b2h = \u03c0(4)(5) = 20\u03c0",
+    "qualityScore": 3.5,
+    "source": "kaggle"
+  },
+  {
+    "id": "read-info-004",
+    "section": "reading-writing",
+    "topic": "information-and-ideas",
+    "difficulty": "easy",
+    "stimulus": "Photosynthesis requires sunlight, water, and carbon dioxide to produce glucose and oxygen.",
+    "stem": "What are the inputs for photosynthesis?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Glucose and oxygen only"
+      },
+      {
+        "id": "B",
+        "text": "Sunlight, water, carbon dioxide"
+      },
+      {
+        "id": "C",
+        "text": "Chlorophyll only"
+      },
+      {
+        "id": "D",
+        "text": "Heat and pressure"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "The passage lists the three inputs",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "read-craft-004",
+    "section": "reading-writing",
+    "topic": "craft-and-structure",
+    "difficulty": "medium",
+    "stem": "What type of sentence is this: 'Although it was raining, she walked outside.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "Simple"
+      },
+      {
+        "id": "B",
+        "text": "Compound"
+      },
+      {
+        "id": "C",
+        "text": "Complex"
+      },
+      {
+        "id": "D",
+        "text": "Fragmented"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Complex sentence has dependent clause 'Although it was raining'",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-expr-004",
+    "section": "reading-writing",
+    "topic": "expression-of-ideas",
+    "difficulty": "medium",
+    "stem": "Fix this run-on: 'The dog barked the cat hissed.'",
+    "choices": [
+      {
+        "id": "A",
+        "text": "The dog barked the cat hissed."
+      },
+      {
+        "id": "B",
+        "text": "The dog barked. The cat hissed."
+      },
+      {
+        "id": "C",
+        "text": "The dog barked and the cat hissed."
+      },
+      {
+        "id": "D",
+        "text": "Both (B) and (C) are correct"
+      }
+    ],
+    "correctAnswer": "D",
+    "explanation": "Both are valid corrections",
+    "qualityScore": 3.5,
+    "source": "generated"
+  },
+  {
+    "id": "read-std-004",
+    "section": "reading-writing",
+    "topic": "standard-english-conventions",
+    "difficulty": "easy",
+    "stem": "Correct: 'My _____ book is on the table.' (its/it's)",
+    "choices": [
+      {
+        "id": "A",
+        "text": "its"
+      },
+      {
+        "id": "B",
+        "text": "it's"
+      },
+      {
+        "id": "C",
+        "text": "it's'"
+      },
+      {
+        "id": "D",
+        "text": "itt's"
+      }
+    ],
+    "correctAnswer": "A",
+    "explanation": "'Its' is possessive; 'it's' = 'it is'",
+    "qualityScore": 4.0,
+    "source": "generated"
+  },
+  {
+    "id": "opensat-alg-008",
+    "section": "math",
+    "topic": "algebra",
+    "difficulty": "hard",
+    "stem": "Solve: |2x - 4| = 6",
+    "choices": [
+      {
+        "id": "A",
+        "text": "x = 5"
+      },
+      {
+        "id": "B",
+        "text": "x = -1"
+      },
+      {
+        "id": "C",
+        "text": "x = 5 or -1"
+      },
+      {
+        "id": "D",
+        "text": "No solution"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "2x - 4 = 6 or 2x - 4 = -6; x = 5 or -1",
+    "qualityScore": 3.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-adv-005",
+    "section": "math",
+    "topic": "advanced-math",
+    "difficulty": "hard",
+    "stem": "If 4^x = 1/16, what is x?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "2"
+      },
+      {
+        "id": "B",
+        "text": "-2"
+      },
+      {
+        "id": "C",
+        "text": "4"
+      },
+      {
+        "id": "D",
+        "text": "-4"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "4^(-2) = 1/4\u00b2 = 1/16",
+    "qualityScore": 3.0,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-prob-004",
+    "section": "math",
+    "topic": "problem-solving-data-analysis",
+    "difficulty": "medium",
+    "stem": "Median of 3, 5, 7, 9, 11 is?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "3"
+      },
+      {
+        "id": "B",
+        "text": "5"
+      },
+      {
+        "id": "C",
+        "text": "7"
+      },
+      {
+        "id": "D",
+        "text": "9"
+      }
+    ],
+    "correctAnswer": "C",
+    "explanation": "Middle value of ordered list is 7",
+    "qualityScore": 3.5,
+    "source": "opensat"
+  },
+  {
+    "id": "opensat-geo-004",
+    "section": "math",
+    "topic": "geometry-trigonometry",
+    "difficulty": "easy",
+    "stem": "Perimeter of rectangle: length 10, width 6?",
+    "choices": [
+      {
+        "id": "A",
+        "text": "16"
+      },
+      {
+        "id": "B",
+        "text": "32"
+      },
+      {
+        "id": "C",
+        "text": "60"
+      },
+      {
+        "id": "D",
+        "text": "120"
+      }
+    ],
+    "correctAnswer": "B",
+    "explanation": "P = 2(l + w) = 2(10 + 6) = 32",
+    "qualityScore": 4.0,
+    "source": "opensat"
+  }
+]
