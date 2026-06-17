@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  color-scheme: light;
+}
+
+button {
+  touch-action: manipulation;
+}
