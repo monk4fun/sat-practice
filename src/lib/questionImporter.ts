@@ -4,7 +4,7 @@ import type { Question, Topic, SATSection } from '../types';
 // 'algebra', 'advanced-math', 'problem-solving-data-analysis', 'geometry-trigonometry'
 
 export interface ImportedQuestionSource {
-  source: 'khan-academy' | 'opensat' | 'college-board';
+  source: 'khan-academy' | 'opensat' | 'college-board' | 'agieval' | 'kaggle-math' | 'github-bank';
   url: string;
   title: string;
   description: string;
@@ -15,22 +15,43 @@ export const AVAILABLE_SOURCES: ImportedQuestionSource[] = [
   {
     source: 'opensat',
     url: 'https://pinesat.com/api/questions',
-    title: 'OpenSAT API',
-    description: 'Community-curated, open-source SAT questions with public API',
-    questionCount: 500, // Approximate
+    title: '🟢 OpenSAT API',
+    description: 'Community-curated, open-source SAT questions (FREE & LEGAL)',
+    questionCount: 500,
+  },
+  {
+    source: 'agieval',
+    url: 'https://huggingface.co/datasets/dmayhem93/agieval-sat-math',
+    title: '🔵 AGIEval SAT (Microsoft)',
+    description: 'Research-grade SAT math questions from Microsoft (MIT License)',
+    questionCount: 200,
+  },
+  {
+    source: 'kaggle-math',
+    url: 'https://www.kaggle.com/datasets/k5m1th/college-readiness-math-questions-dataset',
+    title: '🟡 Kaggle College Readiness',
+    description: 'Expert-annotated math questions (CC-BY License)',
+    questionCount: 300,
+  },
+  {
+    source: 'github-bank',
+    url: 'https://github.com/mdn522/sat-question-bank',
+    title: '⚫ GitHub SAT Bank',
+    description: 'Community-maintained question bank from GitHub',
+    questionCount: 100,
   },
   {
     source: 'khan-academy',
     url: 'https://www.khanacademy.org/test-prep/sat',
     title: 'Khan Academy SAT Prep',
-    description: 'Official College Board partner with 1,000+ questions (requires web scraping)',
+    description: '(Requires manual CSV export - not directly accessible)',
     questionCount: 1000,
   },
   {
     source: 'college-board',
     url: 'https://satsuite.collegeboard.org/practice',
     title: 'College Board Official Practice',
-    description: 'Official SAT questions (requires institutional API access)',
+    description: '(Requires institutional API access)',
     questionCount: 8000,
   },
 ];
@@ -38,6 +59,7 @@ export const AVAILABLE_SOURCES: ImportedQuestionSource[] = [
 /**
  * Fetch questions from OpenSAT public API
  * This is the easiest and most legal approach
+ * License: Open Source
  */
 export async function importFromOpenSAT(): Promise<Question[]> {
   try {
@@ -67,6 +89,103 @@ export async function importFromOpenSAT(): Promise<Question[]> {
     console.error('Error importing from OpenSAT:', error);
     throw new Error('Failed to fetch questions from OpenSAT API');
   }
+}
+
+/**
+ * Fetch questions from AGIEval SAT Math Dataset (Microsoft - MIT License)
+ * Research-grade SAT math questions
+ */
+export async function importFromAGIEval(): Promise<Question[]> {
+  try {
+    // AGIEval dataset from Hugging Face
+    const response = await fetch(
+      'https://huggingface.co/api/datasets/dmayhem93/agieval-sat-math/parquet'
+    );
+
+    if (!response.ok) {
+      // Fallback: fetch from GitHub raw content
+      const githubUrl =
+        'https://raw.githubusercontent.com/microsoft/AGIEval/main/data/sat_math.json';
+      const githubResponse = await fetch(githubUrl);
+      const data = await githubResponse.json();
+      return parseAGIEvalData(data);
+    }
+
+    const data = await response.json();
+    return parseAGIEvalData(data);
+  } catch (error) {
+    console.error('Error importing from AGIEval:', error);
+    throw new Error(
+      'Failed to fetch AGIEval questions. Please try OpenSAT instead.'
+    );
+  }
+}
+
+function parseAGIEvalData(data: any): Question[] {
+  const questions: Question[] = [];
+
+  const items = Array.isArray(data) ? data : data.data || [];
+
+  for (let i = 0; i < items.length; i++) {
+    const q = items[i];
+    if (!q.question && !q.stem) continue;
+
+    questions.push({
+      id: `agieval-${i}`,
+      section: 'math',
+      topic: 'algebra', // AGIEval focuses on math
+      difficulty: determineDifficulty(q.difficulty || 'medium'),
+      stem: q.question || q.stem,
+      stimulus: q.context || undefined,
+      choices: [
+        { id: 'A' as const, text: q.A || q.choices?.[0] || 'A' },
+        { id: 'B' as const, text: q.B || q.choices?.[1] || 'B' },
+        { id: 'C' as const, text: q.C || q.choices?.[2] || 'C' },
+        { id: 'D' as const, text: q.D || q.choices?.[3] || 'D' },
+      ],
+      correctAnswer: (q.answer || q.correct_answer || 'A').toUpperCase() as 'A' | 'B' | 'C' | 'D',
+      explanation: q.explanation || 'See reference solution',
+    });
+  }
+
+  return questions;
+}
+
+/**
+ * Import questions from Kaggle College Readiness Math Dataset (CC-BY License)
+ * User must download CSV and paste content
+ */
+export async function importFromKaggleMath(csv: string): Promise<Question[]> {
+  const lines = csv.split('\n');
+  const questions: Question[] = [];
+
+  // Expected format: question_id, question, option_a, option_b, option_c, option_d, correct_answer, difficulty, explanation
+  for (let i = 1; i < lines.length; i++) {
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    const parts = line.split(',');
+    if (parts.length < 7) continue;
+
+    questions.push({
+      id: `kaggle-math-${i}`,
+      section: 'math',
+      topic: determineMathTopic(parts[8] || 'algebra'),
+      difficulty: determineDifficulty(parts[7]),
+      stem: parts[1].replace(/^"|"$/g, ''),
+      stimulus: undefined,
+      choices: [
+        { id: 'A' as const, text: parts[2] },
+        { id: 'B' as const, text: parts[3] },
+        { id: 'C' as const, text: parts[4] },
+        { id: 'D' as const, text: parts[5] },
+      ],
+      correctAnswer: (parts[6].toUpperCase().charAt(0) || 'A') as 'A' | 'B' | 'C' | 'D',
+      explanation: parts[8] || 'See solution',
+    });
+  }
+
+  return questions;
 }
 
 /**
@@ -178,11 +297,30 @@ export function validateQuestion(q: any): string[] {
 }
 
 // Helper functions
-function mapDifficulty(difficulty: string): 'easy' | 'medium' | 'hard' {
+function determineDifficulty(difficulty: string | number): 'easy' | 'medium' | 'hard' {
+  if (typeof difficulty === 'number') {
+    if (difficulty >= 7) return 'hard';
+    if (difficulty >= 4) return 'medium';
+    return 'easy';
+  }
+
   const d = (difficulty || '').toLowerCase();
-  if (d.includes('hard')) return 'hard';
-  if (d.includes('medium')) return 'medium';
+  if (d.includes('hard') || d.includes('3')) return 'hard';
+  if (d.includes('medium') || d.includes('2')) return 'medium';
   return 'easy';
+}
+
+function mapDifficulty(difficulty: string): 'easy' | 'medium' | 'hard' {
+  return determineDifficulty(difficulty);
+}
+
+function determineMathTopic(topic: string): Topic {
+  const t = (topic || '').toLowerCase();
+  if (t.includes('advanced')) return 'advanced-math';
+  if (t.includes('geometry') || t.includes('trig')) return 'geometry-trigonometry';
+  if (t.includes('problem') || t.includes('data') || t.includes('analysis'))
+    return 'problem-solving-data-analysis';
+  return 'algebra';
 }
 
 function determineSection(topic: string): 'reading-writing' | 'math' {

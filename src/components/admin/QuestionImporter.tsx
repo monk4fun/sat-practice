@@ -4,6 +4,7 @@ import { Button } from '../ui/Button';
 import { Badge } from '../ui/Badge';
 import {
   importFromOpenSAT,
+  importFromAGIEval,
   importFromKhanAcademy,
   validateQuestion,
   AVAILABLE_SOURCES,
@@ -65,6 +66,33 @@ export const QuestionImporter: React.FC = () => {
       setError(null);
     } catch (err) {
       setError(`Error importing from OpenSAT: ${err instanceof Error ? err.message : 'Unknown error'}`);
+    } finally {
+      setIsImporting(false);
+    }
+  };
+
+  const handleQuickImportAGIEval = async () => {
+    setIsImporting(true);
+    setError(null);
+
+    try {
+      const questions = await importFromAGIEval();
+
+      // Validate and auto-approve
+      const validQuestions = questions.filter(q => {
+        const errors = validateQuestion(q);
+        return errors.length === 0;
+      });
+
+      // Save directly to localStorage
+      const customQuestions = JSON.parse(localStorage.getItem('customQuestions') || '[]');
+      customQuestions.push(...validQuestions);
+      localStorage.setItem('customQuestions', JSON.stringify(customQuestions));
+
+      alert(`✅ Successfully imported and saved ${validQuestions.length} questions from AGIEval!`);
+      setError(null);
+    } catch (err) {
+      setError(`Error importing from AGIEval: ${err instanceof Error ? err.message : 'Unknown error'}`);
     } finally {
       setIsImporting(false);
     }
@@ -196,6 +224,37 @@ export const QuestionImporter: React.FC = () => {
               <p className="mt-1 text-xs text-gray-500">Review and approve questions one by one</p>
             </div>
           </div>
+        </Card>
+      )}
+
+      {/* Khan Academy Import */}
+      {/* AGIEval Import */}
+      {selectedSource?.source === 'agieval' && (
+        <Card>
+          <h3 className="mb-4 text-lg font-semibold">Import from AGIEval (Microsoft)</h3>
+          <p className="mb-6 text-sm text-gray-600">
+            Research-grade SAT math questions from Microsoft's AGIEval dataset. MIT License - fully open source!
+          </p>
+
+          {error && (
+            <div className="mb-4 rounded-lg bg-red-50 p-4 text-red-800">
+              <p className="font-medium">Error</p>
+              <p className="text-sm">{error}</p>
+            </div>
+          )}
+
+          <Button
+            variant="primary"
+            size="lg"
+            fullWidth
+            onClick={handleQuickImportAGIEval}
+            disabled={isImporting}
+          >
+            {isImporting ? 'Importing...' : '⚡ Import AGIEval Math Questions'}
+          </Button>
+          <p className="mt-2 text-xs text-gray-600">
+            📊 ~200 research-validated math questions from Microsoft
+          </p>
         </Card>
       )}
 
