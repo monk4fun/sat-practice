@@ -45,10 +45,22 @@ function computeWeight(
 ): number {
   const progress = topicProgress[question.topic];
 
+  // Performance-based priority weights for targeted improvement
+  // Based on SAT May 2026 performance: R&W 540 (weak), Math 710 (strong)
+  const performancePriority: Record<Topic, number> = {
+    'information-and-ideas': 5.0, // Weakest R&W subarea (420-480)
+    'standard-english-conventions': 5.0, // Weakest R&W subarea (420-480)
+    'craft-and-structure': 2.0, // Average R&W (550-600)
+    'expression-of-ideas': 2.0, // Average R&W (550-600)
+    'problem-solving-data-analysis': 2.5, // Weakest Math (550-600)
+    'algebra': 0.3, // Strong Math (680-800)
+    'advanced-math': 0.3, // Strong Math (680-800)
+    'geometry-trigonometry': 0.3, // Strong Math (680-800)
+  };
+
   // Never attempted: high weight
   if (!progress || progress.totalAttempts === 0) {
-    const baseWeight = 2.0;
-    // For new topics: prioritize easy questions first
+    const baseWeight = performancePriority[question.topic] || 2.0;
     return applyDifficultyModifier(baseWeight, 0, question.difficulty);
   }
 
@@ -65,6 +77,9 @@ function computeWeight(
   } else {
     baseWeight = 0.5; // Strong (> 80%): lower weight
   }
+
+  // Apply performance-based priority multiplier (boost weak areas regardless of recent performance)
+  baseWeight *= performancePriority[question.topic];
 
   // PRIORITY 1: Recency penalty - boost weight if strong topic hasn't been attempted recently
   if (accuracy >= 0.8) {
