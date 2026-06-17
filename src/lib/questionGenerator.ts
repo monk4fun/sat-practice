@@ -59,40 +59,63 @@ async function generateQuestionsWithClaude(
 
   const prompt = `Generate ${count} high-quality SAT ${section} question(s) about "${topicDescriptions[topic]}".
 
-    Difficulty level: ${difficultyLevel}
+Difficulty level: ${difficultyLevel}
 
-    Each question should:
-    ${
-      isReadingWriting
-        ? `
-    - Include a brief passage (1-3 sentences) if appropriate
-    - Have a clear stem asking what the passage suggests/means
-    - Include 4 multiple choice options (A, B, C, D)
-    - Have ONE correct answer and 3 plausible distractors
-    - Include a detailed explanation of why the correct answer is right
-    `
-        : `
-    - Be a standalone problem (no passage needed)
-    - Have clear numerical or logical content
-    - Include 4 multiple choice options (A, B, C, D)
-    - Have ONE correct answer and 3 plausible distractors
-    - Include a detailed explanation showing the solution
-    `
-    }
+CRITICAL: FOLLOW COLLEGE BOARD DESIGN STANDARDS
 
-    Respond with ONLY valid JSON array (no markdown, no extra text). Each object should have:
-    {
-      "stimulus": "passage text (only for reading questions, omit for math)",
-      "stem": "the question text",
-      "choices": [
-        {"id": "A", "text": "option text"},
-        {"id": "B", "text": "option text"},
-        {"id": "C", "text": "option text"},
-        {"id": "D", "text": "option text"}
-      ],
-      "correctAnswer": "A",
-      "explanation": "detailed explanation"
-    }`;
+${
+  isReadingWriting
+    ? `
+READING & WRITING DESIGN RULES:
+- Passage: EXACTLY 25-150 words (count words), one clear thought
+- Stem: Direct question about passage meaning, tone, or mechanics
+- DISTRACTORS must reflect REAL STUDENT ERRORS:
+  * Use passage language but misrepresent meaning
+  * Include partially correct facts
+  * Echo ideas not supported by passage
+  * Trap with absolute qualifiers (always, never, all)
+  * Present scope ambiguities or false implications
+  * Preserve tone while changing meaning
+- Each distractor must be plausible to students who misread or misconstrue
+- Avoid "obviously wrong" answers
+`
+    : `
+MATH DESIGN RULES:
+- Problem must be clearly stated and unambiguous
+- Include all necessary information (no missing data)
+- DISTRACTORS must reflect REAL STUDENT ERRORS:
+  * Intermediate results (e.g., side length when answer asks for area)
+  * Inverted fractions (3/5 vs 5/3)
+  * Scale misreading on graphs/tables
+  * Solving for wrong variable (x when answer asks for 2x)
+  * Common computational mistakes (+/- errors, order of operations)
+  * Misreading what problem asks for
+  * Off-by-one errors in sequences
+- Distractors should be answers students get if they make one common mistake
+`
+}
+
+GENERAL REQUIREMENTS:
+- Make questions indistinguishable from official SAT questions
+- Ensure difficulty level is accurate (${difficultyLevel})
+- Write explanation that explains WHY correct answer works and WHY each distractor is wrong
+- Use clear, academic language
+- No trick wording—difficulty comes from reasoning, not semantics
+
+Respond with ONLY valid JSON array (no markdown, no extra text):
+[
+  {
+    ${isReadingWriting ? '"stimulus": "25-150 word passage here",\n    ' : ''}"stem": "question text",
+    "choices": [
+      {"id": "A", "text": "option"},
+      {"id": "B", "text": "option"},
+      {"id": "C", "text": "option"},
+      {"id": "D", "text": "option"}
+    ],
+    "correctAnswer": "A",
+    "explanation": "why A is correct and why B, C, D are wrong"
+  }
+]`;
 
   try {
     const response = await fetch('https://api.anthropic.com/v1/messages', {
