@@ -10,13 +10,15 @@ export function useAutoImportQuestions() {
       }
 
       try {
-        // Fetch both question sets
+        // Fetch all question sets from OpenSAT, AGIEval, and Kaggle
         const response1 = await fetch('/sat-questions-200.json');
         const response2 = await fetch('/sat-questions-expanded.json');
+        const response3 = await fetch('/sat-questions-massive.json');
 
         const questions1 = await response1.json();
         const questions2 = await response2.json();
-        const allQuestions = [...questions1, ...questions2];
+        const questions3 = await response3.json();
+        const allQuestions = [...questions1, ...questions2, ...questions3];
 
         // Get existing custom questions
         const existing = JSON.parse(localStorage.getItem('customQuestions') || '[]');
@@ -32,7 +34,7 @@ export function useAutoImportQuestions() {
         // Mark as imported
         localStorage.setItem('questionsImported', 'true');
 
-        console.log(`✅ Auto-imported ${newQuestions.length} SAT questions`);
+        console.log(`✅ Auto-imported ${newQuestions.length} SAT questions from OpenSAT, AGIEval, and Kaggle`);
         console.log(`📊 Total question bank: ${combined.length} questions`);
       } catch (error) {
         console.error('Auto-import failed:', error);
