@@ -7,10 +7,12 @@ import { ProgressPage } from './pages/ProgressPage';
 import { AdminPage } from './pages/AdminPage';
 import { useFirebaseSync } from './hooks/useFirebaseSync';
 import { useAutoImportQuestions } from './hooks/useAutoImportQuestions';
+import { useAutoGenerateQuestions } from './hooks/useAutoGenerateQuestions';
 
 function AppContent() {
   useFirebaseSync();
   useAutoImportQuestions();
+  useAutoGenerateQuestions();
 
   return (
     <Routes>
