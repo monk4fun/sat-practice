@@ -8,8 +8,11 @@
  * - Problem-Solving & Data Analysis (Math - 15% of section)
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const CLAUDE_API_KEY = process.env.VITE_CLAUDE_API_KEY;
 
