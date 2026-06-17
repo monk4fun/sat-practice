@@ -36,6 +36,8 @@ interface AppStore extends AppState {
   // Progress actions
   recordAttempt: (attempt: QuestionAttempt) => void;
   updateTopicProgress: (topic: Topic, isCorrect: boolean) => void;
+  trackFailedQuestion: (questionId: string, questionText: string, topic: Topic, difficulty: string) => void;
+  trackSuccessOnFailedQuestion: (questionId: string) => void;
 
   // Computed
   getWeakTopics: () => Topic[];
@@ -59,6 +61,7 @@ export const useAppStore = create<AppStore>()(
       questionAttempts: [] as QuestionAttempt[],
       examResults: [] as any[],
       drillResults: [] as DrillResult[],
+      failedQuestions: {} as Record<string, any>,
       currentDrill: null,
       currentExam: null,
 
@@ -236,6 +239,35 @@ export const useAppStore = create<AppStore>()(
           }
           progress.accuracyRate = progress.correctAttempts / progress.totalAttempts;
           progress.lastAttemptedAt = new Date().toISOString();
+        });
+      },
+
+      trackFailedQuestion: (questionId: string, questionText: string, topic: Topic, difficulty: string) => {
+        set((state) => {
+          const existing = state.failedQuestions[questionId];
+          state.failedQuestions[questionId] = {
+            questionId,
+            questionText,
+            topic,
+            difficulty,
+            failureCount: (existing?.failureCount || 0) + 1,
+            lastFailedAt: new Date().toISOString(),
+            successAttemptsSinceFailure: 0,
+          };
+        });
+      },
+
+      trackSuccessOnFailedQuestion: (questionId: string) => {
+        set((state) => {
+          const failed = state.failedQuestions[questionId];
+          if (!failed) return;
+
+          failed.successAttemptsSinceFailure = (failed.successAttemptsSinceFailure || 0) + 1;
+
+          // Mark as mastered after 2 successes
+          if (failed.successAttemptsSinceFailure >= 2) {
+            delete state.failedQuestions[questionId];
+          }
         });
       },
 

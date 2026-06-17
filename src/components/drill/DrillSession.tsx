@@ -124,11 +124,14 @@ const DrillQuestion: React.FC<DrillQuestionProps> = ({
 export const DrillSession: React.FC = () => {
   const drill = useAppStore((s) => s.currentDrill);
   const topicProgress = useAppStore((s) => s.topicProgress);
+  const failedQuestions = useAppStore((s) => s.failedQuestions);
   const startDrill = useAppStore((s) => s.startDrill);
   const answerQuestion = useAppStore((s) => s.answerDrillQuestion);
   const advanceDrill = useAppStore((s) => s.advanceDrill);
   const completeDrill = useAppStore((s) => s.completeDrill);
   const recordAttempt = useAppStore((s) => s.recordAttempt);
+  const trackFailedQuestion = useAppStore((s) => s.trackFailedQuestion);
+  const trackSuccessOnFailedQuestion = useAppStore((s) => s.trackSuccessOnFailedQuestion);
   const allQuestions = useAllQuestions();
 
   const [isAnswered, setIsAnswered] = useState(false);
@@ -138,6 +141,7 @@ export const DrillSession: React.FC = () => {
     if (!drill) {
       const questionIds = selectAdaptiveQuestions(allQuestions, topicProgress, {
         count: DRILL_SESSION_LENGTH,
+        failedQuestions,
       }).map((q) => q.id);
 
       startDrill({});
@@ -149,7 +153,7 @@ export const DrillSession: React.FC = () => {
         }
       });
     }
-  }, [drill, startDrill, topicProgress]);
+  }, [drill, startDrill, topicProgress, failedQuestions]);
 
   if (!drill) return null;
 
@@ -175,6 +179,19 @@ export const DrillSession: React.FC = () => {
       sessionId: drill.id,
       mode: 'drill',
     });
+
+    // Track failed questions for spaced repetition
+    if (!isCorrect) {
+      trackFailedQuestion(
+        currentQuestion.id,
+        currentQuestion.stem,
+        currentQuestion.topic,
+        currentQuestion.difficulty
+      );
+    } else if (failedQuestions[currentQuestion.id]) {
+      // Track success on previously failed question
+      trackSuccessOnFailedQuestion(currentQuestion.id);
+    }
 
     if (drill.currentIndex < drill.questionIds.length - 1) {
       setIsAnswered(false);

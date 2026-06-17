@@ -8,11 +8,13 @@ import { AdminPage } from './pages/AdminPage';
 import { useFirebaseSync } from './hooks/useFirebaseSync';
 import { useAutoImportQuestions } from './hooks/useAutoImportQuestions';
 import { useAutoGenerateQuestions } from './hooks/useAutoGenerateQuestions';
+import { useGenerateSimilarQuestions } from './hooks/useGenerateSimilarQuestions';
 
 function AppContent() {
   useFirebaseSync();
   useAutoImportQuestions();
   useAutoGenerateQuestions();
+  useGenerateSimilarQuestions();
 
   return (
     <Routes>

@@ -8,6 +8,7 @@ export function selectAdaptiveQuestions(
     topicFilter?: Topic;
     sectionFilter?: SATSection;
     recentAttempts?: string[];
+    failedQuestions?: Record<string, any>;
   }
 ): Question[] {
   // Filter candidates
@@ -25,7 +26,13 @@ export function selectAdaptiveQuestions(
   // Assign weights based on topic accuracy (with quality score boost)
   const weights = candidates.map((q) => {
     const baseWeight = computeWeight(q, topicProgress);
-    return applyQualityBoost(baseWeight, (q as any).qualityScore);
+    let boostedWeight = applyQualityBoost(baseWeight, (q as any).qualityScore);
+    // SPACED REPETITION: Boost weight for failed questions
+    if (options.failedQuestions?.[q.id]) {
+      const failedQ = options.failedQuestions[q.id];
+      boostedWeight *= (2.0 + failedQ.failureCount * 0.5); // 2.0x to 4.0x boost
+    }
+    return boostedWeight;
   });
 
   // Weighted random sample without replacement

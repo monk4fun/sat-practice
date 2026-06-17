@@ -158,6 +158,7 @@ export interface AppState {
   questionAttempts: QuestionAttempt[];
   examResults: ExamResult[];
   drillResults: DrillResult[];
+  failedQuestions: Record<string, any>;
   currentDrill: DrillSession | null;
   currentExam: ExamSession | null;
 }
