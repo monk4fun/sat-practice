@@ -4,6 +4,7 @@ import { ProgressReport } from '../components/progress/ProgressReport';
 import { SectionChart } from '../components/progress/SectionChart';
 import { TopicBreakdown } from '../components/progress/TopicBreakdown';
 import { WeakTopicsAlert } from '../components/progress/WeakTopicsAlert';
+import { SixtyDayTracker } from '../components/progress/SixtyDayTracker';
 import { Card } from '../components/ui/Card';
 
 export const ProgressPage: React.FC = () => {
@@ -40,6 +41,8 @@ export const ProgressPage: React.FC = () => {
           </div>
         </Card>
       )}
+
+      <SixtyDayTracker />
 
       <WeakTopicsAlert />
       <SectionChart />
